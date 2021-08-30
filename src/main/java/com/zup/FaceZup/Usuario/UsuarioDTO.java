@@ -1,21 +1,23 @@
 package com.zup.FaceZup.Usuario;
 
-import javax.persistence.*;
-import javax.validation.constraints.Email;
+public class UsuarioDTO {
 
-@Entity
-@Table(name = "usuarios")
-public class Usuario {
-
-
+    private int id;
     private String nome;
     private String sobrenome;
-    @Id
     private String email;
     private String cargo;
 
-    public Usuario(){
+    public UsuarioDTO(){
 
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
