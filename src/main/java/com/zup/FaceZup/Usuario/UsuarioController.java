@@ -21,12 +21,12 @@ public class UsuarioController {
         return usuarioService.salvarUsuario(usuario);
     }
 
-    /*
+
     @GetMapping
     public List<Usuario> exibirUsuario(){
-        return
+        return usuarioService.exibirUsuarios();
     }
-*/
+
 
 
 }
