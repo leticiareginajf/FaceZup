@@ -16,6 +16,7 @@ public class Usuario {
     @Id
     private String email;
     private String cargo;
+    @OneToMany(mappedBy = "usuario")
     private List<Mensagem> mensagens;
 
     public Usuario(){
@@ -52,5 +53,13 @@ public class Usuario {
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
+    }
+
+    public List<Mensagem> getMensagens() {
+        return mensagens;
+    }
+
+    public void setMensagens(List<Mensagem> mensagens) {
+        this.mensagens = mensagens;
     }
 }

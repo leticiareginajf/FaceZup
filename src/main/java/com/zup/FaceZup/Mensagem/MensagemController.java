@@ -17,8 +17,9 @@ public class MensagemController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mensagem cadastrarMensagem(@RequestBody @Valid Mensagem mensagem, @PathVariable int mensagemId){
-        return service.cadastrarMensagem(mensagem);
+    public Mensagem cadastrarMensagem(@RequestBody @Valid MensagemDTO mensagemDTO){
+
+        return service.cadastrarMensagem(mensagemDTO.getMensagem(), mensagemDTO.getOrigem(), mensagemDTO.getDestino());
     }
 
 

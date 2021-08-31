@@ -20,5 +20,10 @@ public class UsuarioService {
         return (List<Usuario>) repository.findAll();
     }
 
+    public Usuario pesquisarUsuario(String email){
+
+        return repository.findById(email).get();
+    }
+
 
 }

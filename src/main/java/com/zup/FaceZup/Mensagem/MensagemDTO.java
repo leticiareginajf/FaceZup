@@ -2,7 +2,6 @@ package com.zup.FaceZup.Mensagem;
 
 public class MensagemDTO {
 
-    private Integer id;
     private String mensagem;
     private String origem;
     private String destino;
@@ -10,15 +9,6 @@ public class MensagemDTO {
 
     public MensagemDTO(){
 
-    }
-
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getMensagem() {

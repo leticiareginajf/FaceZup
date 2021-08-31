@@ -7,7 +7,7 @@ import java.util.List;
 public interface MensagemRepository extends CrudRepository<Mensagem, Integer> {
 
 
-        List<Mensagem> findByDestinUser(String email);
+        /*List<Mensagem> findByDestinUser(Integer email);*/
 
 
 }
