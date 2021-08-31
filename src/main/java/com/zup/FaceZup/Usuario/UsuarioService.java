@@ -13,6 +13,7 @@ public class UsuarioService {
     public Repository repository;
 
     public Usuario salvarUsuario(Usuario usuario){
+
         return repository.save(usuario);
     }
 
