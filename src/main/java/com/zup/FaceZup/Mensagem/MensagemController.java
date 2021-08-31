@@ -14,12 +14,12 @@ public class MensagemController {
     private MensagemService service;
 
 
-    /*
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Mensagem cadastrarMensagem(@RequestBody MensagemDTO mensagemDTO){
-        return service.equals(mensagemDTO);
+    public Mensagem cadastrarMensagem(@RequestBody @Valid Mensagem mensagem, @PathVariable int mensagemId){
+        return service.cadastrarMensagem(mensagem);
     }
-*/
+
 
 }

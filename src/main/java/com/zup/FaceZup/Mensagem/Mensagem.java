@@ -12,7 +12,11 @@ public class Mensagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String mensagem;
+    @ManyToOne
+    @JoinColumn(name = "origem", nullable = false)
     private Usuario usuario;
+    @ManyToOne
+    @JoinColumn(name = "destino", nullable = false)
     private Usuario usuarioDestino;
 
     public Mensagem(){
